@@ -578,7 +578,7 @@ table.comp-table {
   <p class="subtitle">8大维度打分 · 抖音旗舰店正装价 · 客观真实不恰饭</p>
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="num">36</div>
+      <div class="num" id="heroCount">-</div>
       <div class="label">测评品牌</div>
     </div>
     <div class="hero-stat">
@@ -586,7 +586,7 @@ table.comp-table {
       <div class="label">评分维度</div>
     </div>
     <div class="hero-stat">
-      <div class="num">1.06-4.42</div>
+      <div class="num" id="heroPriceRange">-</div>
       <div class="label">单片价格(元)</div>
     </div>
   </div>
@@ -716,6 +716,17 @@ const DATA = RAW_DATA.map(d => {
   const avg = d.scores ? (d.scores.reduce((a,b)=>a+b,0) / d.scores.length).toFixed(2) : 0;
   return {...d, avg: avg};
 }).sort((a,b) => (b.overall || 0) - (a.overall || 0) || (b.avg || 0) - (a.avg || 0));
+
+// Dynamic hero stats
+(function() {
+  var scored = DATA.filter(function(d) { return d.scores; });
+  document.getElementById('heroCount').textContent = scored.length;
+  var prices = DATA.filter(function(d) { return d.price; }).map(function(d) { return d.price; });
+  var minP = Math.min.apply(null, prices).toFixed(2);
+  var maxP = Math.max.apply(null, prices).toFixed(2);
+  document.getElementById('heroPriceRange').textContent = minP + '-' + maxP;
+  document.title = '葵爸的纸尿裤大横评 | ' + DATA.length + '款品牌深度测评';
+})();
 
 function scoreClass(s) {
   if (s >= 5) return 's5';
