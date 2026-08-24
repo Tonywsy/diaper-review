@@ -568,6 +568,17 @@ table.comp-table {
   .cards-grid { grid-template-columns: 1fr; }
   .section-title { font-size: 18px; }
 }
+  /* 同系列引流条 */
+  .series-bar{background:linear-gradient(135deg,#EAFAF6,#FCFFFD);border:1px solid #B6EAD9;border-radius:16px;padding:22px 20px;margin-top:18px}
+  .series-bar .sb-title{font-size:1.25rem;font-weight:700;color:#1f2d3d;margin:0 0 6px}
+  .series-bar .sb-desc{font-size:.85rem;color:#6b7280;margin:0 0 14px;line-height:1.6}
+  .series-cards{display:flex;gap:14px;flex-wrap:wrap}
+  .series-card{flex:1 1 220px;display:flex;flex-direction:column;gap:5px;background:#fff;border:1px solid #B6EAD9;border-radius:12px;padding:16px 18px;text-decoration:none;color:#0a7d63;box-shadow:0 2px 8px rgba(0,184,148,.08);transition:transform .15s,box-shadow .15s,border-color .15s}
+  .series-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,184,148,.18);border-color:#00b894}
+  .series-card .sc-emoji{font-size:26px;line-height:1}
+  .series-card b{font-size:16px;color:#0a7d63}
+  .series-card .sc-sub{font-size:13px;color:#666}
+  .series-note{margin-top:12px;font-size:13px;color:#0a7d63;font-weight:600}
 </style>
 </head>
 <body>
@@ -659,6 +670,30 @@ table.comp-table {
 </div>
 
 </div>
+
+  <!-- 同系列引流（与疫苗/安全座椅页同款） -->
+  <div class="series-bar">
+    <h2 class="sb-title">葵爸同系列测评</h2>
+    <p class="sb-desc">纸尿裤只是日常防护一环，口粮和出行安全同样不能马虎——这些硬核横评也值得你收藏：</p>
+    <div class="series-cards">
+      <a class="series-card" href="https://tonywsy.github.io/newborn-vaccine-review/">
+        <span class="sc-emoji">💉</span>
+        <b>新生儿疫苗大横评</b>
+        <span class="sc-sub">免费/自费怎么选，一篇讲透</span>
+      </a>
+      <a class="series-card" href="https://tonywsy.github.io/baby-formula-comparison/">
+        <span class="sc-emoji">🍼</span>
+        <b>奶粉大横评</b>
+        <span class="sc-sub">国产1段性价比，谁在收智商税？</span>
+      </a>
+      <a class="series-card" href="https://tonywsy.github.io/car-seat-review/">
+        <span class="sc-emoji">🚗</span>
+        <b>儿童安全座椅大横评</b>
+        <span class="sc-sub">3C / i-Size / ADAC 数据底座</span>
+      </a>
+    </div>
+    <p class="series-note">奶粉横评还有「进口高端 / 进口对比 / 国产对比」版本，进口怎么挑看那篇 → 关注葵爸看更多硬核测评</p>
+  </div>
 
 <div class="footer">
   <p>📊 本测评数据仅供参考，实际体验因宝宝体型和肤质而异</p>
