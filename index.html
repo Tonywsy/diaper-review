@@ -710,7 +710,8 @@ const RAW_DATA = [
   {"name":"京东京造云柔Cloud拉拉裤","douyin_name":"京东京造云柔Cloud拉拉裤","price_raw":"XL码 23.9元/34片 | 0.7/片","price":0.7,"price_total":23.9,"price_count":34,"scores":[3.5,3.5,3.5,4,4,3.5,3.5,3.5,3],"safety":3,"overall":3.55,"highlights":"舒比奇代工，安全卫生质量这块可以放心。0.8D超细纤维面层+蚕丝蛋白精华涂层，手感比较软糯，透气性中等，吸收速度比较快，回渗控制也很不错，在这个价位档很有竞争力。"},
   {"name":"糯啦啦茶树森林拉拉裤","douyin_name":"糯啦啦茶树森林拉拉裤","price_raw":"XL码 24元/34片 | 0.71/片","price":0.71,"price_total":24.0,"price_count":34,"scores":[4,3,3,3.5,3.5,3.5,3.5,3,3],"safety":3,"overall":3.33,"highlights":"四川聪博新世好母婴代工，0.8D面层+茶树油精华添加，手感不错，PE透气底膜符合纺粘布手感略差。透气性不错，吸收速度快，锁水回渗控制稍弱，性价比相对京造来说低一点。"},
   {"name":"霍格皇家诺贝尔拉拉裤","douyin_name":"霍格皇家诺贝尔拉拉裤","price_raw":"XL码 109元/32片 | 3.41/片","price":3.41,"price_total":109.0,"price_count":32,"scores":[3.5,4.5,4,4.5,4.5,3.5,4,3.5,3.5],"safety":3.5,"overall":4.0,"highlights":"佛山欧比代工，0.8旦面层+澳洲羊毛脂精华添加，手感非常柔软细腻，PE透气底膜复合热风无纺布手感好，透气性一般，吸收速度非常快，回渗控制很优秀，售价较高性价比稍低，产品线单独做了甲酰胺残留检测未检出。"},
-  {"name":"柔丫洞洞裤拉拉裤","douyin_name":"柔丫洞洞裤拉拉裤","price_raw":"XL码 65元/28片 | 2.32/片","price":2.32,"price_total":65.0,"price_count":28,"scores":[4,4,3.5,4.5,4,3.5,4,3.5,3.5],"safety":3.5,"overall":3.87,"highlights":"泉州天骄大厂出品，同门师兄弟布班迪甄芯薄甲酰胺未检出进入白名单，同产线柔丫在卫生安全性上应该也不错。0.8D面层双面热风工艺+蚕丝蛋白精华，手感柔软轻薄，透气性中等，吸收速度非常快，回渗控制表现优秀，售价相对同公司产品线来说较高性价比较低。整体尺码偏小，泉州纸尿裤老毛病，对胖宝宝不够友好。"}
+  {"name":"柔丫洞洞裤拉拉裤","douyin_name":"柔丫洞洞裤拉拉裤","price_raw":"XL码 65元/28片 | 2.32/片","price":2.32,"price_total":65.0,"price_count":28,"scores":[4,4,3.5,4.5,4,3.5,4,3.5,3.5],"safety":3.5,"overall":3.87,"highlights":"泉州天骄大厂出品，同门师兄弟布班迪甄芯薄甲酰胺未检出进入白名单，同产线柔丫在卫生安全性上应该也不错。0.8D面层双面热风工艺+蚕丝蛋白精华，手感柔软轻薄，透气性中等，吸收速度非常快，回渗控制表现优秀，售价相对同公司产品线来说较高性价比较低。整体尺码偏小，泉州纸尿裤老毛病，对胖宝宝不够友好。"},
+  {"name":"奇莫皇家至柔拉拉裤","douyin_name":"奇莫皇家至柔拉拉裤","price_raw":"XL码 43元/18片 | 2.39/片","price":2.39,"price_total":43.0,"price_count":18,"scores":[3.5,3.5,4,4.5,4,3.5,4,3.5,3],"safety":3,"overall":3.73,"highlights":"恒安集团大厂出品，整体手感扎实不算轻薄，和同公司另一品牌安儿乐薄薄小轻芯非常类似，手感一般，透气性一般，但是吸收速度和回渗控制优秀，属于比较偏科类的，进入过沈博健康评测甲酰胺抽检，未进入白名单。"}
 ];
 
 const DIMENSIONS = ['厚度透气','面料柔软','腰围弹力','吸水速度','反渗干爽','起坨断层','防漏能力','性价比','安全性'];
@@ -1095,42 +1096,5 @@ renderRanking();
 renderCards();
 renderTable();
 </script>
-
-<style>
-.kb-relbar{margin:28px 0;padding:20px 22px 22px;background:linear-gradient(135deg,#fff6ef,#fffdfa);border:1px solid #ffd9c2;border-radius:16px}
-.kb-relbar .kbrt{font-size:1.2rem;font-weight:700;color:#2c3e50;margin:0 0 4px}
-.kb-relbar .kbrd{font-size:.85rem;color:#6b7280;margin:0 0 14px;line-height:1.6}
-.kb-relcards{display:flex;gap:14px;flex-wrap:wrap}
-.kb-relcard{flex:1 1 220px;display:flex;flex-direction:column;gap:5px;background:#fff;border:1px solid #ffd9c2;border-radius:12px;padding:15px 17px;text-decoration:none;color:#9a3d12;box-shadow:0 2px 8px rgba(232,132,60,.08);transition:transform .15s,box-shadow .15s,border-color .15s}
-.kb-relcard:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(255,122,69,.18);border-color:#ff7a45}
-.kb-relcard .kre{font-size:25px;line-height:1}
-.kb-relcard b{font-size:1rem;color:#9a3d12}
-.kb-relcard .krs{font-size:.8rem;color:#666}
-</style><section class="kb-relbar">
-  <h3 class="kbrt">葵爸同系列横评</h3>
-  <p class="kbrd">吃穿用养，硬核数据派——这些横评也值得你收藏：</p>
-  <div class="kb-relcards">
-    <a class="kb-relcard" href="https://Tonywsy.github.io/baby-carrier-review/">
-      <span class="kre">🎒</span>
-      <b>婴儿背带·腰凳横评</b>
-      <span class="krs">10 款监管抽查为底 · 扒穿 IHDI 认证话术</span>
-    </a>
-    <a class="kb-relcard" href="https://Tonywsy.github.io/baby-formula-comparison/">
-      <span class="kre">🍼</span>
-      <b>奶粉大横评</b>
-      <span class="krs">1/2/3 段，谁在收智商税</span>
-    </a>
-    <a class="kb-relcard" href="https://Tonywsy.github.io/car-seat-review/">
-      <span class="kre">🚗</span>
-      <b>安全座椅横评</b>
-      <span class="krs">千元到三千档</span>
-    </a>
-    <a class="kb-relcard" href="https://Tonywsy.github.io/newborn-vaccine-review/">
-      <span class="kre">💉</span>
-      <b>新生儿疫苗时间表</b>
-      <span class="krs">0–6 岁接种规划 · 自费/免费</span>
-    </a>
-  </div>
-</section>
 </body>
 </html>
